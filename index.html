@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dynamic Team Page</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+  <div class="team">
+    <div class="member">
+      <img src="img/member1.jpg" alt="Juan" onclick="showInfo('Juan', 'juan@example.com', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus dolor nec dui ultricies, ut consequat massa dapibus.')">
+      <span class="name">Juan</span>
+    </div>
+    <div class="member">
+      <img src="img/member2.jpg" alt="María" onclick="showInfo('María', 'maria@example.com', 'Nullam pharetra efficitur justo, at interdum est pretium non. In vitae convallis magna.')">
+      <span class="name">María</span>
+    </div>
+    <div class="member">
+      <img src="img/member3.jpg" alt="Pedro" onclick="showInfo('Pedro', 'pedro@example.com', 'Suspendisse potenti. Nulla in ipsum in nisl cursus laoreet sit amet non purus.')">
+      <span class="name">Pedro</span>
+    </div>
+    <div class="member">
+      <img src="img/member4.jpg" alt="Laura" onclick="showInfo('Laura', 'laura@example.com', 'Fusce quis urna vel velit malesuada commodo. Praesent a est lectus.')">
+      <span class="name">Laura</span>
+    </div>
+  </div>
+
+  <div id="lightbox" class="hidden">
+    <div class="lightbox-content">
+      <span id="close" onclick="closeInfo()">&times;</span>
+      <h2 id="lightbox-name"></h2>
+      <p id="lightbox-email"></p>
+      <p id="lightbox-bio"></p>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
