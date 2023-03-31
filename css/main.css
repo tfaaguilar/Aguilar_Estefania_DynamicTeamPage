@@ -1,3 +1,328 @@
+/* 1. General Styles */
+.hidden { display: none;}
+
+body {
+    font-family: 'comfortaa', arial, sans-serif;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    border: solid 1px #f2ecf7;
+    box-shadow: 0px 5px 8px #888888;
+}
+
+a {
+	text-decoration: none;
+	transition: all .5s ease-in-out;
+}
+
+/* 2. Grid */
+
+.grid {
+    display: grid;
+    padding-left: 15px;
+    padding-right: 15px;
+    grid-template-columns: repeat(12, 70px);
+    grid-column-gap: 30px;
+}
+
+/* 3. Header */
+
+#main-header {
+    margin-top: 20px;
+    position: sticky;
+	top: 0px;
+	background-color: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#header-logo {
+    grid-column: 5/8;
+}
+
+#header-nav {
+    grid-column: 3/9;
+    
+}
+
+#header-nav ul li  {
+    display: inline;
+    padding: 6px; 
+}
+
+#header-nav ul li a {
+    color: rgb(63, 5, 129);
+}
+
+#header-nav ul li a:hover {
+    
+    border-bottom: 5px solid #5b0da3;
+    padding-bottom: 3px;
+}
+
+.log-in {
+    background-color: #e5e6fc;
+    color: #080808;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#log-in-top {
+    grid-column: 9/11;
+    text-align: center;
+}
+
+#log-in-top:hover {
+    background-color: #bf9efc;
+}
+    
+
+/* 4. Main Hero Image */
+
+#hero { 
+    margin-top: 5px;
+    background-color: #ede7f8;
+}
+
+.hero-image {
+    grid-column: 1/-1;
+    grid-row: 1/3;
+}
+
+#explore {
+    grid-column: 2/4;
+    grid-row: 1/1;
+    margin-top: 50px;
+    color: #fff;
+}
+
+#explore:hover {
+    color: #fdc3fd;
+}
+
+#tag-line {
+    grid-column: 10/12;
+    grid-row: 2/2;
+    margin-bottom: 80px;
+    align-self: end;
+    color: #fff;
+    text-align: center;
+}
+
+/* 5. Features 1 */
+
+#features1 {
+    display: flex;
+    margin-top: 30px;
+    text-align: center; 
+}
+
+/* 6. New Flavours */
+
+#new-flavours {
+    margin-top: 50px;
+    background-color: #ede7f8;
+}
+
+.hero-image2 {
+    grid-column: 6/-1;
+    grid-row: 1/3; 
+}
+
+#tag-line2 {
+    grid-column: 2/5;
+    margin-top: 100px;
+    align-self: end;
+}
+
+/* 7. Features 2 */
+
+#features-con {
+    margin-top: 30px;
+    display: flex;
+    text-align: center;
+}
+
+/* 8. Recipes */
+
+#recipes {
+    background-color:#ede7f8;
+}
+
+.hero-image3 {
+    border-radius: 50%;
+    grid-column: 2/12;
+    width: 350px;
+    height: 400px;
+    grid-row: 1/3;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#tag-line3 {
+    margin-top: 50px;
+    text-align: center;
+    grid-column: 8/-1;
+    grid-row: 1/2;
+    height: 80px;
+    width: 300px;
+    margin-bottom: 70px;
+    align-self: end;
+}
+
+#more-recipes:hover {
+    background-color: #a896f7;
+}
+
+/* 9. Clients */
+
+#clients {
+    margin-top: 80px;
+    display: flex;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* 10. Visit us */
+
+#location {
+    margin-top: 50px;
+    background-color: #ede7f8;
+}
+
+.hero-image4 {
+    grid-column: 7/12;
+    grid-row: 1/2; 
+    border-radius: 10%;
+}
+
+#visit-us {
+    grid-column:2/12;
+    grid-row: 1/3;
+    margin-top: 100px;
+}
+
+#tag-line4 {
+    grid-column: 3/-1;
+    grid-row: 1/5;
+    margin-bottom: 70px;
+    align-self: center;
+    
+}
+
+/* 8. Footer */
+
+#footer-con-full {
+    margin-top: 40px;
+    margin-left:100px;
+}
+
+#footer-nav {
+    margin-top: 15px;
+    grid-column: 3/10;
+    grid-row: 1/3;
+}
+
+#footer-social {
+    grid-column: 6/12;
+    grid-row: 1/2;
+}
+
+#info-footer {
+    grid-column: 9/12;
+    grid-row: 1/3;
+    margin-top: 20px;
+}
+
+/* CONTACT */
+
+/* 1. Contact form */
+
+.contact-container {
+    background-color: #ede7f8;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.contact-image {
+    margin-top: 50px;
+    border-radius: 50%;
+}
+
+#contact-form h2 {
+    grid-column: 5/12;
+    align-self: end;
+}
+
+#contact-form-text p {
+    grid-column: 2/12;
+    margin-bottom: 80px;
+}
+
+#contact-form-adress-left {
+    grid-column: 2/6;
+}
+
+#contact-form-fields-right {
+    grid-column: 6/12;
+}
+
+#contact-form-adress-left h3 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+#contact-form-adress-left p {
+    margin-bottom: 20px;
+}
+
+#contact-form-fields-right form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 22px;
+    border: 2px solid #8e6fc7;
+    background-color: #f7f7f7;
+    margin-bottom: 30px;
+    
+}
+
+#contact-form-fields-right textarea {
+    height: 300px;
+}
+
+input[type="submit"] {
+    width: 100px;
+    padding: 16px 32px;
+    background-color: #9e62ff;
+    color: #fff;
+    border: none;
+    transition: all 200ms ease-in;
+    align-self: flex-end;
+}
+
+input[type="submit"]:hover {
+    background-color: #4b2d64;
+    
+}
+
+/* Who Are We? */
+
+#characters {
+    display: flex;
+    width: 10%;
+}
+
 .character {
-    width: 20%;
+    display: flex;
+    width: 200%;
 }
