@@ -127,15 +127,7 @@ opacity: 30%;
 cursor: pointer;
 }
 
-.character:hover:after { 
-content: "akjfskdfjakjf";
-color: black;
-position: absolute;
-bottom: -20px;
-left: 0;
-width: 100%;
-text-align: center;
-}
+
 
 
 h2 {
