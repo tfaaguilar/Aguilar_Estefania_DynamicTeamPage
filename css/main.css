@@ -38,7 +38,7 @@ a {
 	background-color: #fff;
 	padding-top: 10px;
 	padding-bottom: 10px;
-    z-index: 999999 !important;
+    z-index: 4000 !important;
 }
 
 #header-logo {
@@ -107,30 +107,29 @@ a {
     color: #fdc3fd;
 }
 
-
-/* Who Are We? */
-
-#characters {
-    position: relative;
-display: flex;
-width: 10%;
-}
-
 .character {
-display: flex;
-width: 190%;
-margin-left: 30px;
-border-radius: 5%;
-position: relative;
+    border-radius: 30%;
 }
 
 .character:hover {
 opacity: 30%;
 cursor: pointer;
-}
+} 
 
+ .character-ul { list-style-type: none; }
 
-
+ .character-ul li { 
+     position: relative;
+     display: inline-block;
+     height: 200px;
+     margin: 10px 8px;
+     margin-left: 60px;
+     background-color: black;
+     text-align: left;
+     cursor: pointer;
+     border-radius: 50%;
+ }
+ 
 
 h2 {
     font-size: 30px;
@@ -146,14 +145,6 @@ h3 {
 p {
     text-align: center;
 }
-
-
-
-
-
-
-
-
 
 /* 8. Footer */
 
@@ -181,11 +172,9 @@ p {
 
 
 
-/* lightbox rules here */
-
 .lightbox { 
-    width: 100vw;  /* vw = viewport width => screen width  */
-     height: 100vh; /* vh = viewport height => screen height  */
+    width: 60vw; 
+    height: 60vh; 
 
     position: absolute;
     top: 0;
@@ -222,6 +211,7 @@ p {
     width: 55%;
     margin-left: 40%;
     padding-top: 50px;
+    color: white;
 }
 
 .lb_text, .lb_heading { text-align: left; }
@@ -234,3 +224,4 @@ p {
 
 /* turn the lightbox on using the :target pseudo selector */
 .lightbox:target { display: block; }
+
