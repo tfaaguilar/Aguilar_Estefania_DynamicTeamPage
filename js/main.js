@@ -8,3 +8,4 @@ function loadHeroData() {
 }
 
 member.forEach(hero => hero.addEventListener('click', loadHeroData));
+
