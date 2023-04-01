@@ -1,4 +1,4 @@
-let member = {
+let character = {
     president : {
         name: "Matt",
         headline: "President",
@@ -13,7 +13,7 @@ let member = {
         bio: "He's an expert project manager with a knack for turning complex problems into manageable tasks, his breadth of knowledge in the development space puts clients at ease and keeps projects on track. David holds a Bachelor of Business Management and Organizational Studies from Western University.",
     },
 
-    deveolper : {
+    developer : {
         name: "Wendy",
         headline: "Developer",
         bio: "Wendy holds a bachelor's degree in Media Studies with a focus on Public Relations from the University of Guelph as well as a Media Communications diploma from Humber Institute of Technology and Advanced Learning. Her areas of expertise include website strategy and architecture, attention to detail, organization and creative writing. Stephanie is responsible for overseeing the website accounts team and release of all digital content",
