@@ -48,14 +48,34 @@
     <p>Click on each Member to know more...</p>
 
     
-      
-      <section id="characters" class="grid">
-        <h2 class="hidden">Members</h2>
-        <img data-member="president" src="images/member1.jpg" class="character" alt="member1">
-        <img data-member="director" src="images/member2.jpg" class="character" alt="member2"> 
-        <img data-member="developer" src="images/member3.jpg" class="character" alt="member3"> 
-        <img data-member="designer" src="images/member4.jpg" class="character" alt="member4">
+      <section id="characters">
+          <ul class="character-ul">
+            <li>
+              <a href="#lightbox">
+              <img data-member="president" src="images/member1.jpg" class="character" alt="member1">
+               </a>
+            </li>
+            <li>
+              <a href="#lightbox">
+              <img data-member="director" src="images/member2.jpg" class="character" alt="member2" href="#lightbox" > 
+              </a>
+            </li>
+            <li>
+              <a href="#lightbox">
+               <img data-member="developer" src="images/member3.jpg" class="character" alt="member3" href="#lightbox" >
+               </a>
+            </li>
+            <li>
+              <a href="#lightbox">
+              <img data-member="designer" src="images/member4.jpg" class="character" alt="member4" href="#lightbox" >
+              </a>
+            </li>
+              
+
+          </ul>
+
       </section>
+     
 
       <h3>Join Us!</h3>
       <p>We are hiring</p>
@@ -106,13 +126,13 @@
 
       <section class="lightbox" id="lightbox">
         <a href="" class="lightbox_close">x</a>
+
         <article>
-            <h3 class="lb_heading"></h3>
-             <p class="name">sample
-            </p>
-            <p class="lb_text"></p> 
+            <h3 class="lb_heading">Captain America - The First Avenger</h3>
+            <p class="bio">Matt</p>
+            <p class="name">Lorem ipsum</p>
         </article>
-      </section>
+    </section>
 
   <script src="js/members.js"></script>
   <script src="js/main.js"></script>
