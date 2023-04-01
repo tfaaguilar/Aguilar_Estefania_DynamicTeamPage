@@ -110,16 +110,33 @@ a {
 /* Who Are We? */
 
 #characters {
-    display: flex;
-    width: 10%;
+display: flex;
+width: 10%;
 }
 
 .character {
-    display: flex;
-    width: 190%;
-    margin-left: 30px;
-    border-radius: 5%;
+display: flex;
+width: 190%;
+margin-left: 30px;
+border-radius: 5%;
+position: relative;
 }
+
+.character:hover {
+opacity: 30%;
+cursor: pointer;
+}
+
+.character:hover:after { 
+content: "akjfskdfjakjf";
+color: black;
+position: absolute;
+bottom: -20px;
+left: 0;
+width: 100%;
+text-align: center;
+}
+
 
 h2 {
     font-size: 30px;
